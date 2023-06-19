@@ -1,0 +1,25 @@
+[
+  {
+    "username": "CrazyFan23",
+    "email": "admin1@gmail.com",
+    "password": "password01"
+  },
+
+  {
+  "username": "DaJinx00",
+  "email": "admin2@gmail.com",
+  "password": "password02"
+  },
+
+  {
+  "username": "Lose2Win",
+  "email": "admin4@gmail.com",
+  "password": "password03"
+  },
+
+  {
+  "username": "NoWin4Me",
+  "email": "admin3@gmail.com",
+  "password": "password04"
+  }
+] 
