@@ -6,23 +6,21 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    parlays: [Parlay]!
+    pictures: [Picture]!
   }
 
-  type Parlay {
+  type Picture {
     _id: ID
-    home_team: String
-    away_team: String
-    price: Int
-    point: Int
-    commence_time: String
+    title: String
+    image: String
+    commentSchema: String
+    post_time: String
   }
 
-  type Game {
+  type Comment {
     _id: ID
-    home_team: String
-    away_team: String
-    commence_time: String
+    content: String
+    post_time: String
   }
 
   type Auth {
@@ -33,18 +31,20 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    parlays(username: String): [Parlay]
-    parlay(parlayId: ID!): Parlay
-    games: [Game]
-    game(gameId: ID!): Game
+    pictures(username: String): [Picture]
+    picture(pictureId: ID!): Picture
+    comments: [Comment]
+    content(commentId: ID!): Comment
     me: User
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addParlay(home_team: String!, away_team: String!, price: Int!, point: Int!): Parlay
-    removeParlay(parlayId: ID!): Parlay
+    addPicture(title: String!, image: String!, commentSchema: String!): Picture
+    removePicture(pictureId: ID!): Picture
+    addComment(content: String!): Comment
+    removeComment(commentId: ID!): Comment
   }
 `;
 

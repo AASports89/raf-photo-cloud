@@ -6,38 +6,35 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      parlays {
+      pictures {
         _id
-        home_team
-        away_team
-        price
-        point
-        commence_time
+        title
+        image
+        comment
+        post_time
       }
     }
   }
 `;
 
-export const QUERY_PARLAYS = gql`
-  query getParlays {
-    parlays {
+export const QUERY_PICTURES = gql`
+  query getPictures {
+    pictures {
       _id
-      home_team
-      away_team
-      price
-      point
-      commence_time
+      title
+      image
+      comment
+      post_time
     }
   }
 `;
 
-export const QUERY_GAMES = gql`
-  query getGames {
-    games {
+export const QUERY_COMMENTS = gql`
+  query getComments {
+    comments {
       _id
-      home_team
-      away_team
-      commence_time
+      comment
+      post_time
     }
   }
 `;
@@ -48,13 +45,12 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      parlays {
+      pictures {
         _id
-        home_team
-        away_team
-        price
-        point
-        commence_time
+        title
+        image
+        comment
+        post_time
       }
     }
   }

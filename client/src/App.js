@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import ParlayForm from './pages/ParlayForm';
+import PostForm from './pages/PostForm';
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
                 element={<Signup />}
               />
                <Route 
-                path='/parlayform'
-                element={<ParlayForm />}
+                path='/pictureform'
+                element={<PostForm />}
               />
               <Route 
                 path="/me" 

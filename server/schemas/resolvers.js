@@ -1,29 +1,29 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Parlay, Game } = require('../models');
+const { User, Picture, Comment } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
 //PULL MODEL DATA//
  Query: {
     users: async () => {
-      return User.find().populate('parlays');
+      return User.find().populate('pictures');
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('parlays');
+      return User.findOne({ username }).populate('pictures');
     },
-    parlays: async (parent, { username }) => {
+    pictures: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Parlay.find(params).sort({commence_time: -1 });
+      return Picture.find(params).sort({post_time: -1 });
     },
-    parlay: async (parent, { parlayId }) => {
-      return Parlay.findOne({ _id: parlayId });
+    picture: async (parent, { pictureId }) => {
+      return Picture.findOne({ _id: pictureId });
     },
-    games: async () => {
-      return Game.find();
+    comments: async () => {
+      return Comment.find();
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate("parlays");
+        return User.findOne({ _id: context.user._id }).populate("pictures");
       }
       throw new AuthenticationError("Please login❗⛔");
     },
@@ -54,42 +54,57 @@ const resolvers = {
       return { token, user };
     },
 //ADD PARLAY//
-addParlay: async (parent, { home_team, away_team, price, point }, context) => {
+addPicture: async (parent, { title, image, commentSchema }, context) => {
   if (context.user) {
-    const parlay = await Parlay.create({
-      home_team,
-      away_team,
-      price,
-      point,
+    const picture = await Picture.create({
+      title,
+      image,
+      commentSchema,
       username: context.user.username,
     });
 
     await User.findOneAndUpdate(
       { _id: context.user._id },
-      { $addToSet: { parlays: parlay._id } }
+      { $addToSet: { pictures: picture._id } }
     );
 
-    return parlay;
+    return picture;
   }
-  throw new AuthenticationError("Error❗⛔ Please login to set a parlay❗⛔");
+  throw new AuthenticationError("Error❗⛔ Please login to set a picture❗⛔");
+},
+//ADD COMMENT//
+addComment: async (parent, { content }, context) => {
+  if (context.user) {
+    const commentSchema = await Comment.create({
+      content,
+      username: context.user.username,
+    });
+
+    await User.findOneAndUpdate(
+      { _id: context.user._id },
+      { $addToSet: { comments: commentSchema._id } }
+    );
+
+    return commentSchema;
+  }
+  throw new AuthenticationError("Error❗⛔ Please login to post a comment❗⛔");
 },
 //DELETE PARLAY//
-  removeParlay: async (parent, { parlayId }, context) => {
+  removePicture: async (parent, { pictureId }, context) => {
       if(context.user) {
-        const parlay = await Parlay.findOneAndDelete({
-          _id: parlayId,
+        const picture = await Picture.findOneAndDelete({
+          _id: pictureId,
           username: context.user.username,
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $pull: { parlays: parlay._id }}
+          { $pull: { pictures: picture._id }}
         );
-        return parlay;
+        return picture;
       }
-      throw new AuthenticationError("Error❗⛔ Please login to delete parlay❗⛔");
+      throw new AuthenticationError("Error❗⛔ Please login to delete picture❗⛔");
     },
-  }
+  },
 };
-
 module.exports = resolvers;

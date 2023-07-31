@@ -1,14 +1,14 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import ParlayList from '../components/ParlayList';
-import { QUERY_PARLAYS } from '../utils/queries';
+import PictureList from '../components/PictureList';
+import { QUERY_PICTURES } from '../utils/queries';
 
 const Dashboard = () => {
-  const { loading, data } = useQuery(QUERY_PARLAYS);
-  const parlays = data?.parlays || [];
+  const { loading, data } = useQuery(QUERY_PICTURES);
+  const pictures = data?.pictures || [];
  
     if (loading) {
-      return <div>Loading...💸...</div>;
+      return <div>Loading...<i id="login_icon" class="fa-regular fa-image"></i>...</div>;
     }
     
   return (
@@ -20,11 +20,11 @@ const Dashboard = () => {
           </div>
       <div className="flex-row justify-center">
         {loading ? (
-          <div>Loading...💸...</div>
+          <div>Loading...<i id="login_icon" class="fa-regular fa-image"></i>...</div>
           ) : (
-        <ParlayList 
-        parlays={parlays}
-        title="Winner...Winner 💰...Chicken...Dinner 🐔"
+        <PictureList 
+        pictures={pictures}
+        title= "Post w/ friends & family!"
         />
         
         )}

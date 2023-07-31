@@ -1,5 +1,5 @@
 const User = require('./User');
-const Parlay = require('./Parlay');
-const Game = require('./Game');
+const Picture = require('./Picture');
+const Comment = require('./Comment');
 
-module.exports = { User, Parlay, Game };
+module.exports = { User, Picture, Comment };

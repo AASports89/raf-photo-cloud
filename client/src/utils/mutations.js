@@ -24,15 +24,24 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_PARLAY = gql`
-  mutation addParlay($home_team: String!, $away_team: String!, $price: Int!, $point: Int!) {
-    addParlay(home_team: $home_team, away_team: $away_team, price:$price, point:$poiint) {
+export const ADD_PICTURE = gql`
+  mutation addPicture($title: String!, $image: String!, $comment: String!) {
+    addPicture(title: $title, image: $image, comment:$comment) {
       _id
-      home_team
-      away_team
-      price
-      point
-      commence_time
+      title
+      image
+      comment
+      post_time
+    }
+  }
+`
+
+export const ADD_COMMENT = gql`
+  mutation addComment($comment: String!) {
+    addComment(comment: $comment) {
+      _id
+      comment
+      post_time
     }
   }
 `;

@@ -1,11 +1,12 @@
 {
-  "name": "build-a-bet",
+  "name": "raf_cloud",
   "version": "1.0.0",
-  "description": "A user-friendly web-application designed to assist users in having fun creating their own sports parlays, powered via React.js, MongoDB, GraphQL, and Apollo",
+  "description": "A user-friendly web-application designed to allow users to post pictures & comments, for sharing with other users.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "deploy": "gh-pages -d build",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
@@ -20,7 +21,7 @@
     "graphql-tag": "^2.12.6",
     "http-proxy-middleware": "^2.0.6",
     "inquirer": "^8.2.4",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.1",
     "jwt-decode": "^3.1.2",
     "mongoose": "^6.1.8",
     "prettier": "^2.7.1",
@@ -32,6 +33,9 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "eslint-plugin-react-hooks": "^4.6.0"
-  }
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^3.2.3",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
+  },
+"homepage": "https://aasports89.github.io/raf_cloud"
 }

@@ -16,12 +16,12 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: 5,
+    minlength: 6,
   },
-  parlays: [
+  pictures: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'Parlay',
+      ref: 'Picture',
     },
   ]
 });
@@ -37,10 +37,6 @@ userSchema.pre('save', async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
-
-userSchema.virtual('parlayCount').get(function () {
-  return this.parlays.length;
-});
 
 const User = model('User', userSchema);
 

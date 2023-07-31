@@ -17,33 +17,33 @@ const Navbar = () => {
 
   return (
       <nav id="navbar" className="navbar navbar-expand-lg navbar-light bg-light">
-      <h1 id="main-title"> 🏈⚽<img id="parlay" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1667008558/cooltext422338805357325_qvpd09.png" alt="Parlay Anytime"></img>🏀⚾ </h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
         <Link className="text-light" to="/">
-            <h1 id="title"><img id="build" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1666898132/cooltext422262976759629_qb9ewg.png" alt="Build A Bet"></img>🎲</h1>
+            <h1 id="title"><img id="build" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1690795368/raf_cloud_tjyq3y.svg" alt="Raf's_Photo_Cloud"></img></h1>
           </Link>
           <div className="row" id="links">
           {Auth.loggedIn() ? (
             <>
             <Link className="btn" to="/me">
-                {Auth.getProfile().data.username}'s Dashboard 🎛️
+                {Auth.getProfile().data.username}'s Dashboard <i class="fa-solid fa-photo-film"></i>
             </Link>
-              <Link to="/parlayform">
-              <button className="btn" to="/parlayform">
-              Parlays 🤑
+              <Link to="/postform">
+              <button className="btn" to="/postform">
+              Photo Cloud <i class="fa-solid fa-cloud"></i>
             </button>
               </Link>
             <button className="btn" onClick={logout}>
-                Logout 📴
+                Logout <i id="login_icon" class="fa-solid fa-ban"></i>
             </button>
             </>
           ) : (
             <>
             <Link className="btn" to="/login">
-                Login 📡
+            Login <i id="login_icon" class="fa-solid fa-users-rectangle"></i>
             </Link>
             
             <Link className="btn" to="/signup">
-                Sign Up 🎲
+                Sign Up <i id="login_icon" class="fa-solid fa-user-plus"></i>
             </Link>
             </>
           )}
