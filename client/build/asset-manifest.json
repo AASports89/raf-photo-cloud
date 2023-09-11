@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/raf_cloud/static/css/main.f73ec62c.chunk.css",
-    "main.js": "/raf_cloud/static/js/main.dee75029.chunk.js",
-    "main.js.map": "/raf_cloud/static/js/main.dee75029.chunk.js.map",
-    "runtime-main.js": "/raf_cloud/static/js/runtime-main.292a23ea.js",
-    "runtime-main.js.map": "/raf_cloud/static/js/runtime-main.292a23ea.js.map",
-    "static/js/2.1ff8d14a.chunk.js": "/raf_cloud/static/js/2.1ff8d14a.chunk.js",
-    "static/js/2.1ff8d14a.chunk.js.map": "/raf_cloud/static/js/2.1ff8d14a.chunk.js.map",
-    "static/js/3.f0be74fa.chunk.js": "/raf_cloud/static/js/3.f0be74fa.chunk.js",
-    "static/js/3.f0be74fa.chunk.js.map": "/raf_cloud/static/js/3.f0be74fa.chunk.js.map",
-    "index.html": "/raf_cloud/index.html",
-    "static/css/main.f73ec62c.chunk.css.map": "/raf_cloud/static/css/main.f73ec62c.chunk.css.map",
-    "static/js/2.1ff8d14a.chunk.js.LICENSE.txt": "/raf_cloud/static/js/2.1ff8d14a.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/raf_cloud/static/media/photo_cloud_bg.e245b7d8.gif"
+    "main.css": "/raf-photo-cloud/static/css/main.ce80fd5a.chunk.css",
+    "main.js": "/raf-photo-cloud/static/js/main.879706cf.chunk.js",
+    "main.js.map": "/raf-photo-cloud/static/js/main.879706cf.chunk.js.map",
+    "runtime-main.js": "/raf-photo-cloud/static/js/runtime-main.8cacabe4.js",
+    "runtime-main.js.map": "/raf-photo-cloud/static/js/runtime-main.8cacabe4.js.map",
+    "static/js/2.44083a45.chunk.js": "/raf-photo-cloud/static/js/2.44083a45.chunk.js",
+    "static/js/2.44083a45.chunk.js.map": "/raf-photo-cloud/static/js/2.44083a45.chunk.js.map",
+    "static/js/3.c2d53b60.chunk.js": "/raf-photo-cloud/static/js/3.c2d53b60.chunk.js",
+    "static/js/3.c2d53b60.chunk.js.map": "/raf-photo-cloud/static/js/3.c2d53b60.chunk.js.map",
+    "index.html": "/raf-photo-cloud/index.html",
+    "static/css/main.ce80fd5a.chunk.css.map": "/raf-photo-cloud/static/css/main.ce80fd5a.chunk.css.map",
+    "static/js/2.44083a45.chunk.js.LICENSE.txt": "/raf-photo-cloud/static/js/2.44083a45.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/raf-photo-cloud/static/media/photo_cloud_bg.e245b7d8.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.292a23ea.js",
-    "static/js/2.1ff8d14a.chunk.js",
-    "static/css/main.f73ec62c.chunk.css",
-    "static/js/main.dee75029.chunk.js"
+    "static/js/runtime-main.8cacabe4.js",
+    "static/js/2.44083a45.chunk.js",
+    "static/css/main.ce80fd5a.chunk.css",
+    "static/js/main.879706cf.chunk.js"
   ]
 }
