@@ -1,7 +1,7 @@
 //DEPENDECY & IMPORT//
-    const {Model, DataTypes} = require("sequelize");
-    const bcrypt = require("bcrypt");
-    const sequelize = require("../config/connection");
+const { Model, DataTypes } = require("mongoose");
+const mongoose = require("../config/connection");
+const bcrypt = require("bcrypt");
 
     class User extends Model {
 //CHECK USER LOGIN --> BCRYPT//
@@ -55,7 +55,7 @@
                 return newUserData;
             },
         },
-        sequelize,
+        mongoose,
         freezeTableName: true,
         underscored: true,
         modelName: "user",

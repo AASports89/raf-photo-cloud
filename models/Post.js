@@ -1,6 +1,6 @@
 //DEPENDENCY & IMPORT//
-    const {Model, DataTypes} = require("sequelize");
-    const sequelize = require("../config/connection");
+const { Model, DataTypes } = require("mongoose");
+const mongoose = require("../config/connection");
 
     class Post extends Model {}
 
@@ -21,7 +21,7 @@
             type: DataTypes.STRING(1000),
             allowNull: false,
         },
-            content: {
+            comment: {
             type: DataTypes.STRING(1000),
             allowNull: false,
         },
@@ -35,7 +35,7 @@
         },
     },
         {
-        sequelize,
+        mongoose,
         freezeTableName: true,
         underscored: true,
         modelName: "post",
