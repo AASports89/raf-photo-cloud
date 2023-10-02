@@ -1,0 +1,71 @@
+{{!-- ***************************************************** ADDING COMMENT TO POST VIEW *************************************************** --}}
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <section class="section">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                       <div class="content is-medium">
+                            <h1 class="title">{{postData.title}}</h1>
+                            <img id="post-image" src="{{postData.image}}">
+                            <h2 id="h2">{{format_date postData.createdAt}}</h2>
+                            <h6 id="h6">By: {{postData.user.username}}</h6>
+                            <p style="border: 1px solid black; border-radius: 0.5em; font-size: 105%; padding: 3%; color: black">{{postData.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<div class="is-divider"></div>
+            <div class="column is-8 is-offset-2">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                         <label style="text-align: center; font-size: 150%; color: whitesmoke" class="label">Comment: 📢</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div style="margin-top: 1%" class="control">
+                                <textarea
+                                    class="textarea comment-input"
+                                    placeholder="Blog Git before you even start...🖥️"
+                                    required/>
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <!-- Left empty for spacing -->
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <button id="comment-submit" class="button is-success comment-submit">
+                                    Submit 📬
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{{!-- ***************************************************** STRING OF COMMENTS FOR EACH POST *************************************************** --}}
+            <div class="column is-8 is-offset-2" id="comment-section">
+                {{#each postData.comments as |cmt|}}
+                    <article class="message">
+                        <div class="message-body">
+                            {{comment}}
+                            <p class="has-text-right"><strong>-
+                                {{user.username}},
+                                {{format_date createdAt}}</strong>
+                                {{#if ../loggedInUserData.isAdmin}}
+                                (<span class="delete-comment" id="delete-comment" data-id="{{id}}">❌</span>)</p>
+                                {{/if}}
+                        </div>
+                    </article>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="current-post-id is-invisible">{{postData.id}}</div>
+</section>
+  <script src="/js/post.js"></script>

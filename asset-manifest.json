@@ -1,10 +1,27 @@
 {
   "files": {
-    "main.js": "/AASports89/blog-git/AASports89/raf-photo-cloud/static/js/main.703d144b.js",
-    "index.html": "/AASports89/blog-git/AASports89/raf-photo-cloud/index.html",
-    "main.703d144b.js.map": "/AASports89/blog-git/AASports89/raf-photo-cloud/static/js/main.703d144b.js.map"
+    "main.css": "/static/css/main.b1ce2bd6.chunk.css",
+    "main.js": "/static/js/main.71d83d47.chunk.js",
+    "main.js.map": "/static/js/main.71d83d47.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.10ee2081.js",
+    "runtime-main.js.map": "/static/js/runtime-main.10ee2081.js.map",
+    "static/js/2.cf0cd1bb.chunk.js": "/static/js/2.cf0cd1bb.chunk.js",
+    "static/js/2.cf0cd1bb.chunk.js.map": "/static/js/2.cf0cd1bb.chunk.js.map",
+    "static/js/3.745cf075.chunk.js": "/static/js/3.745cf075.chunk.js",
+    "static/js/3.745cf075.chunk.js.map": "/static/js/3.745cf075.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b1ce2bd6.chunk.css.map": "/static/css/main.b1ce2bd6.chunk.css.map",
+    "static/js/2.cf0cd1bb.chunk.js.LICENSE.txt": "/static/js/2.cf0cd1bb.chunk.js.LICENSE.txt",
+    "static/media/dashboard.15462f90.handlebars": "/static/media/dashboard.15462f90.handlebars",
+    "static/media/login.b1147b0e.handlebars": "/static/media/login.b1147b0e.handlebars",
+    "static/media/main.33055fa7.handlebars": "/static/media/main.33055fa7.handlebars",
+    "static/media/post.df7c5648.handlebars": "/static/media/post.df7c5648.handlebars",
+    "static/media/signup.42c5a7e8.handlebars": "/static/media/signup.42c5a7e8.handlebars"
   },
   "entrypoints": [
-    "static/js/main.703d144b.js"
+    "static/js/runtime-main.10ee2081.js",
+    "static/js/2.cf0cd1bb.chunk.js",
+    "static/css/main.b1ce2bd6.chunk.css",
+    "static/js/main.71d83d47.chunk.js"
   ]
 }
