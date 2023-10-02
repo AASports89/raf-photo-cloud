@@ -1,4 +1,7 @@
-//***************************************************** USER-EDIT POST MENU ***************************************************//
+import cloudinary from 'react';
+import deleteCommentHandler from './post';
+
+//***************************************************** EDIT POST MENU ***************************************************//
 let image = "";
 const submitPostHandler = async (event) => {
         event.preventDefault();
@@ -17,9 +20,7 @@ const submitPostHandler = async (event) => {
                 headers: { "Content-Type": "application/json" },
             });
             if (response.ok) {
-                document.location.replace( "/")
-                + 
-                alert(`Success✅ Post edited❕✍`);
+                document.location.replace( "/");
             } else {
                 alert("Error❗⛔ Failed to update post❗⛔" +
                         response.status +

@@ -6,15 +6,9 @@
         "isAdmin": "true"
     },
     {
-        "username": "Da Lannisters",
-        "email": "test@gmail.com",
-        "password": "test1234",
-        "isAdmin": "false"
-    },
-    {
-        "username": "Dr. Evil",
-        "email": "test_deez@gmail.com",
-        "password": "test12345",
+        "username": "Rafael",
+        "email": "rafael205@aol.com",
+        "password": "raf205",
         "isAdmin": "false"
     }
 ]

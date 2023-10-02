@@ -1,5 +1,5 @@
 //DEPENDENCIES & IMPORTS//
-    const sequelize = require("../config/connection");
+    const mongoose = require("../config/connection");
     const User = require("../models/User");
     const Post = require("../models/Post");
     const Comment = require("../models/Comment");
@@ -9,7 +9,7 @@
 
 //CREATE TABLES & SEED FOR TESTING//
     const seedDatabase = async () => {
-        await sequelize.sync({ force: true });
+        await mongoose.sync({ force: true });
 
         await User.bulkCreate(userData, {
         individualHooks: true,

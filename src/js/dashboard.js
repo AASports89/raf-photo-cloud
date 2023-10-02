@@ -1,35 +1,59 @@
-//***************************************************** EDIT POST MENU ***************************************************//
-let image = "";
-const submitPostHandler = async (event) => {
+import cloudinary from 'react';
+
+//***************************************************** ADMIN DASHBOARD MENU ***************************************************//
+let image = "";    
+    const submitPostHandler = async (event) => {
         event.preventDefault();
             console.log(image);
     const title = document.querySelector(".subject-input").value
     const content = document.querySelector(".content-input").value
     const author_id = document.querySelector(".logged-in-user-id").innerHTML;
-    const post_id = document.querySelector(".current-post-id").innerHTML;
-    if (!author_id) {
-        alert("Error❗⛔ Unable to edit post, please login❗⛔");
-    } else {
-        if (title && content) {
-            const response = await fetch("/api/post/" + post_id, {
-                method: "PUT",
-                body: JSON.stringify({ title, image, content, author_id }),
+        if (!author_id) {
+            alert("Error❗⛔ Unable to post, please login❗⛔");
+        } else {
+        if  (title && content) {
+            const response = await fetch("/api/post/", {
+                method: "POST",
+                body: JSON.stringify({ image, title, content, author_id }),
                 headers: { "Content-Type": "application/json" },
             });
             if (response.ok) {
-                document.location.replace( "/")
-                + 
-                alert(`Success✅ Post edited❕✍`);
+                document.location.replace("/");
             } else {
-                alert("Error❗⛔ Failed to update post❗⛔" +
+                alert(
+                    "Error❗⛔ Failed to post❗⛔" +
                         response.status +
                         ": " +
                         response.statusText
                 );
             }
             } else {
-            alert("Error❗⛔ Please fill out all required fields❗⛔");
+                alert("Error❗⛔ Please fill out all required fields❗⛔");
             }
+        }
+    };
+
+//DELETE POST//
+    const deletePostHandler = async (event) => {
+        event.preventDefault();
+        const deletePostId = event.target.getAttribute("data-id");
+        if (deletePostId) {
+            const response = await fetch("/api/post/" + deletePostId, {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" },
+        });
+        if (response.ok) {
+
+            alert(`Warning❗⛔ Post deleted❗❌` 
+                                +
+            document.location.replace("/dashboard"));
+
+            } else {
+                alert("Error❗⛔ Failed to delete post❗⛔" +
+                    response.status +
+                    ": " +
+                    response.statusText);
+                }
         }
     };
 //****************************************** IMAGE UPLOAD PROCESS ****************************************//
@@ -49,10 +73,10 @@ const submitPostHandler = async (event) => {
     });
 //EVENT LISTENERS//
     document
-        .querySelector(".edit-submit")
+        .querySelector(".submit-post")
         .addEventListener("click", submitPostHandler
     );
-    const deleteLinks = document.querySelectorAll(".delete-comment");
-        deleteLinks.forEach((el) =>
-        el.addEventListener("click", (event) => deleteCommentHandler(event))
+    const deleteButtons = document.querySelectorAll(".delete-post");
+        deleteButtons.forEach((el) =>
+            el.addEventListener("click", (event) => deletePostHandler(event))
     );

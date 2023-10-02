@@ -1,28 +1,26 @@
 //DEPENDENCY & IMPORT//
-    const { Model, DataTypes } = require("mongoose");
+    const { Schema, model } = require("mongoose");
     const mongoose = require("../config/connection");
 
-    class Comment extends Model {}
-
 //COMMENT MODEL//
-    Comment.init(
+const commentSchema = new Schema(
     {
         id: {
-            type: DataTypes.INTEGER,
+            type: Number,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
             comment: {
-            type: DataTypes.STRING,
+            type: String,
             allowNull: false,
         },
             image: {
-            type: DataTypes.STRING(1000),
+            type: String,
             allowNull: false,
         },
             author_id: {
-            type: DataTypes.INTEGER,
+            type: Number,
             allowNull: false,
             references: {
                 model: "user",
@@ -30,7 +28,7 @@
             },
         },
             post_id: {
-            type: DataTypes.INTEGER,
+            type: Number,
             allowNull: false,
             references: {
                 model: "post",
@@ -44,5 +42,12 @@
         underscored: true,
         modelName: "comment",
     });
+
+    commentSchema.virtual('commentCount').get(function () 
+    {
+        return this.comments.length;
+    });
+
+    const Comment = model("Comment", commentSchema);
 
     module.exports = Comment;

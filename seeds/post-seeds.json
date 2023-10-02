@@ -1,32 +1,20 @@
 [
     {
-        "title": "Welcome to 'Blog Git', tech-blog!",
-        "content": "'Blog Git' is a friendly space to post all development & coding related information!",
+        "title": "Welcome to Raf's Photo Cloud™",
+        "commentSchema": "Great picture from our Europe vacation from April 2023!",
         "image": "https://res.cloudinary.com/dhqsixgmo/image/upload/v1665087137/blog-it-images/th-4_baisbq.jpg",
         "author_id": "1"
     },
     {
-        "title": "Creating a user account 101.",
-        "content": "Be sure to create a user account with a username, email and a password with at least 6-characters.",
+        "title": "My amazing family!",
+        "commentSchema": "Be sure to create a user account with a username, email and a password with at least 6-characters.",
         "image": "https://res.cloudinary.com/dhqsixgmo/image/upload/v1665094426/blog-it-images/th-9_fpdf3v.jpg",
         "author_id": "2"
     },
     {
-        "title": "Follow the rules set forth by 'Blog Git'!",
-        "content": "It is important to follow the rules & code of conduct as outlined by the administrators of 'Blog Git'!",
+        "title": "Taking pictures is a great way to share memories & experiences w/ family & friends!",
+        "commentSchema": "It is important to follow the rules & code of conduct as outlined by the administrators of 'Blog Git'!",
         "image": "https://res.cloudinary.com/dhqsixgmo/image/upload/v1665087137/blog-it-images/th-3_ydktqd.jpg",
         "author_id": "3"
-    },
-    {
-        "title": "Posts can be edited, commented on & deleted.",
-        "content": "Regular user privileges allow for users to edit & delete their own posts & comments, but they may only comment on other user's posts.",
-        "image": "https://res.cloudinary.com/dhqsixgmo/image/upload/v1665087137/blog-it-images/th-4_baisbq.jpg",
-        "author_id": "1"
-    },
-    {
-        "title": "Have fun!",
-        "content": "This tech-blog was created as a space to share knowledge between developers, but it is important to have FUN!!",
-        "image": "https://res.cloudinary.com/dhqsixgmo/image/upload/v1665087137/blog-it-images/th-2_g5lrmz.jpg",
-        "author_id": "2"
     }
 ]

@@ -1,29 +1,23 @@
 //DEPENDECY & IMPORT//
-const { Model, DataTypes } = require("mongoose");
+const { Schema, model } = require("mongoose");
 const mongoose = require("../config/connection");
 const bcrypt = require("bcrypt");
 
-    class User extends Model {
-//CHECK USER LOGIN --> BCRYPT//
-    checkPassword(loginPw) {
-        return bcrypt.compareSync(loginPw, this.password);
-        }
-    };
 //USER MODEL//
-    User.init(
+const userSchema = new Schema(
     {
         id: {
-            type: DataTypes.INTEGER,
+            type: Number,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
         username: {
-            type: DataTypes.STRING,
+            type: String,
             allowNull: false,
         },
         email: {
-            type: DataTypes.STRING,
+            type: String,
             allowNull: false,
             unique: true,
             validate: {
@@ -31,14 +25,14 @@ const bcrypt = require("bcrypt");
             },
         },
         password: {
-            type: DataTypes.STRING,
+            type: String,
             allowNull: false,
             validate: {
                 len: [6],
             },
         },
         isAdmin: {
-            type: DataTypes.BOOLEAN,
+            type: Boolean,
             allowNull: false,
         },
     },
@@ -61,5 +55,12 @@ const bcrypt = require("bcrypt");
         modelName: "user",
         }
     );
+
+    userSchema.virtual('userCount').get(function () 
+    {
+        return this.users.length;
+    });
+
+    const User = model("User", userSchema);
 
     module.exports = User;

@@ -16,8 +16,6 @@ const submitCommentHandler = async (event) => {
             });
             if (response.ok) {
                 document.location.replace("/post/" + post_id + "#comment-section");
-                + 
-                alert(`Success✅ New comment added❕✍`);
                 document.location.reload();
             } else {
                 alert(
@@ -44,9 +42,7 @@ const submitCommentHandler = async (event) => {
                 headers: { "Content-Type": "application/json" },
             });
             if (response.ok) {
-                document.location.replace("/post/" + currentPostId + "#comment-section") 
-                                        +
-                    alert("Warning❗⛔ Comment deleted❗❌");
+                document.location.replace("/post/" + currentPostId + "#comment-section");
                 document.location.reload();
             } else {
                 alert(

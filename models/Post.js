@@ -1,32 +1,30 @@
 //DEPENDENCY & IMPORT//
-const { Model, DataTypes } = require("mongoose");
+const { Schema, model } = require("mongoose");
 const mongoose = require("../config/connection");
 
-    class Post extends Model {}
-
 //POST MODEL//
-    Post.init(
+const postSchema = new Schema(
     {
         id: {
-            type: DataTypes.INTEGER,
+            type: Number,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
             title: {
-            type: DataTypes.STRING,
+            type: String,
             allowNull: false,
         },
             image: {
-            type: DataTypes.STRING(1000),
+            type: String,
             allowNull: false,
         },
-            comment: {
-            type: DataTypes.STRING(1000),
+            commentSchema: {
+            type: String,
             allowNull: false,
         },
             author_id: {
-            type: DataTypes.INTEGER,
+            type: Number,
             allowNull: false,
             references: {
                 model: "user",
@@ -40,5 +38,12 @@ const mongoose = require("../config/connection");
         underscored: true,
         modelName: "post",
     });
+
+    postSchema.virtual('postCount').get(function () 
+    {
+        return this.posts.length;
+    });
+
+    const Post = model("Post", postSchema);
 
     module.exports = Post;
