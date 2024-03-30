@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS pics_db;
-
-CREATE DATABASE pics_db;

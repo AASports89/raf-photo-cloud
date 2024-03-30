@@ -1,57 +1,52 @@
 {
   "name": "raf-photo-cloud",
-  "version": "1.0.0",
-  "description": "A simple application dedicated to the sharing of photos via uploads & comments exchanged between users w/ accounts.",
-  "main": "server.js",
+  "version": "5.0.0",
+  "homepage": "https://gitname.github.io/raf-photo-cloud",
   "private": true,
-  "proxy": "http://localhost:3001",
-  "directories": {
-    "public": "public",
-    "views": "views"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "deploy": "gh-pages -d build",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build",
-    "node": "node seeds/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AASports89/raf-photo-cloud.git"
-  },
-  "keywords": [],
-  "author": "AASports89",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AASports89/blog-git/AASports89/raf-photo-cloud"
-  },
-  "homepage": "https://github.com/AASports89/blog-git/AASports89/raf-photo-cloud",
   "dependencies": {
+    "@apollo/client": "^3.5.8",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.21",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "animate.css": "^3.7.0",
+    "aos": "^2.3.4",
+    "api_client": "^0.0.2",
     "apollo-server-express": "^3.6.2",
-    "bcrypt": "^5.1.1",
-    "cloudinary": "^1.32.0",
-    "concurrently": "^7.6.0",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^5.1.3",
+    "cloudinary": "^2.0.3",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.17.2",
     "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
     "graphql": "^15.4.0",
     "handlebars": "^4.7.7",
-    "http-errors": "^2.0.0",
+    "https-browserify": "^1.0.0",
     "inquirer": "8.2.4",
-    "jsdom": "^20.0.1",
     "jwt-decode": "^3.1.2",
     "mongoose": "^6.1.8",
-    "mysql2": "^2.3.3",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "^3.0.1",
-    "serve": "14.2.1"
+    "querystring-es3": "^0.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "typescript": "^4.5.4",
+    "url": "^0.11.3",
+    "web-vitals": "^2.1.3",
+    "wowjs": "^1.1.3"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -72,7 +67,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
+    "@types/aos": "^3.0.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^3.2.3",
     "nodemon": "^2.0.3"

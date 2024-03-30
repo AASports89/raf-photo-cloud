@@ -1,0 +1,160 @@
+.container-fluid {
+  text-align: center;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  #logo {
+    animation: App-logo-flip infinite 20s linear;
+  }
+} */
+
+#header {
+  background-color: #eeecfd;
+  width: 100%;
+  font-size: calc(10px + 2vmin);
+}
+
+.card {
+  border: none;
+}
+
+#banner {
+  width: 50%;
+  background: transparent;
+  justify-content: center;
+}
+
+#home {
+  color:rgb(6, 6, 195);
+  text-decoration: none;
+}
+
+#home-icon {
+  margin-right: 2%;
+}
+
+#home:hover {
+  color: #c7b600;
+}
+
+#menu {
+  color:rgb(6, 6, 195);
+  text-decoration: none;
+}
+
+#menu-icon {
+  margin-right: 2%;
+}
+
+#menu:hover {
+  color: #c7b600;
+}
+
+#custom {
+  color:rgb(6, 6, 195);
+  text-decoration: none;
+}
+
+#custom-icon {
+  margin-right: 2%;
+}
+
+#custom:hover {
+  color: #c7b600;
+}
+
+#list {
+  margin-right: 0.5%;
+}
+
+#link1 {
+  color: #61dafb;
+  text-decoration: none;
+  width: 100%;
+}
+
+#link1:hover {
+  text-decoration: none;
+  color: #f2ed00;
+}
+
+#footer-card {
+  background: none;
+  border: none;
+  font-size: 10pt;
+  
+}
+
+#footer-title {
+  font-size: 90%;
+}
+
+#footer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #eeecfd;
+  margin-top: 60%;
+}
+
+#yelp {
+  color: #D22222;
+  font-size: 150%;
+}
+
+#twitter {
+  font-size: 150%;
+}
+
+#twitter:hover {
+  transition: all 0.3s ease-in-out;
+  font-size: 110%;
+  color: rgba(128, 128, 128, 0.506);
+}
+
+#insta {
+  color:  rgb(94, 79, 125);
+  font-size: 150%;
+}
+
+#insta:hover {
+  color: rgba(128, 128, 128, 0.506);
+  transition: all 0.3s ease-in-out;
+  font-size: 110%;
+}
+
+#yelp:hover {
+  transition: all 0.3s ease-in-out;
+  font-size: 110%;
+  color: rgba(128, 128, 128, 0.506);
+}
+
+#inline_container {
+  max-height: auto;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+#main-label {
+  border-bottom: 1px dashed black; 
+  margin-bottom: 3%; 
+  text-align: center; 
+  font-size: 125%
+}
+
+#inner-label {
+  margin-top: 2.5%; 
+  margin-bottom: 1%
+}
+
+#royal-icon {
+  width: 5%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
