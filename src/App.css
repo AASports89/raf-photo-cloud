@@ -9,20 +9,67 @@
 } */
 
 #header {
-  background-color: #eeecfd;
+  padding: 5%;
+  font-size: 90%;
+}
+
+#logo-header {
+  padding: 5%;
+}
+
+.App-header {
+  background-color: transparent;
+}
+
+#navbar {
+  background: transparent;
   width: 100%;
   font-size: calc(10px + 2vmin);
+  height: 95px;
+  margin-top: 2%;
+  border-radius: 0.5em;
+}
+
+#container-uploader {
+  border: none;
+  background: transparent;
+}
+
+#file {
+  border: 2px dashed #d6def0;
+  padding: 5%;
+  border-radius: 0.5em;
+}
+
+#upload {
+  color: #d6def0;
+  padding-left: 0.25%;
+}
+
+#upload:hover {
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  font-size: 125%;
+}
+
+#upload-title {
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  border: 1px solid whitesmoke;
+}
+
+#logo {
+  width: 100%;
 }
 
 .card {
   border: none;
 }
 
-#banner {
-  width: 50%;
-  background: transparent;
-  justify-content: center;
-}
 
 #home {
   color:rgb(6, 6, 195);
@@ -34,7 +81,9 @@
 }
 
 #home:hover {
-  color: #c7b600;
+  color: rgba(128, 128, 128, 0.506);
+  transition: all 0.3s ease-in-out;
+  font-size: 110%;
 }
 
 #menu {
@@ -47,7 +96,9 @@
 }
 
 #menu:hover {
-  color: #c7b600;
+  color: rgba(128, 128, 128, 0.506);
+  transition: all 0.3s ease-in-out;
+  font-size: 110%;
 }
 
 #custom {
@@ -60,7 +111,9 @@
 }
 
 #custom:hover {
-  color: #c7b600;
+  color: rgba(128, 128, 128, 0.506);
+  transition: all 0.3s ease-in-out;
+  font-size: 110%;
 }
 
 #list {
@@ -78,54 +131,22 @@
   color: #f2ed00;
 }
 
-#footer-card {
-  background: none;
-  border: none;
-  font-size: 10pt;
-  
-}
-
-#footer-title {
-  font-size: 90%;
-}
-
 #footer {
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: #eeecfd;
   margin-top: 60%;
+  border: none;
+  width: 100%;
 }
 
-#yelp {
-  color: #D22222;
-  font-size: 150%;
+#footer-title {
+  padding-top: 1%;
+  font-size: 80%;
 }
 
-#twitter {
-  font-size: 150%;
-}
-
-#twitter:hover {
-  transition: all 0.3s ease-in-out;
-  font-size: 110%;
-  color: rgba(128, 128, 128, 0.506);
-}
-
-#insta {
-  color:  rgb(94, 79, 125);
-  font-size: 150%;
-}
-
-#insta:hover {
-  color: rgba(128, 128, 128, 0.506);
-  transition: all 0.3s ease-in-out;
-  font-size: 110%;
-}
-
-#yelp:hover {
-  transition: all 0.3s ease-in-out;
-  font-size: 110%;
-  color: rgba(128, 128, 128, 0.506);
+.App-footer {
+  background-color: #d6def0;
+  border-radius: 0.5em;
 }
 
 #inline_container {
@@ -147,7 +168,7 @@
 }
 
 #royal-icon {
-  width: 5%;
+  width: 6%;
 }
 
 @keyframes App-logo-spin {

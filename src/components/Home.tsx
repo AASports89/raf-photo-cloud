@@ -1,106 +1,40 @@
 import React, {useEffect} from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import logo192 from '../images/logo192.svg'
 import '../App.css';
 import Aos from 'aos';
 
-
 export default function Home() {
-	
+
+    
     useEffect(() => {
 		Aos.init({duration:3000});
 	}, [])
-
 return (
-
-<main className="container-fluid">
-<section class="hero has-background-grey-lighter">
-        <div class="hero-body">
-            <div class="container">
-                 <label class="label is-large" id="addpost" class="label">Create New Post ⌨️</label>
-                <div class="columns is-centered">
-                    <div class="column">
-                        <form class="box">
-                            <label class="label" style="border-bottom: 1px dashed black; margin-bottom: 3%; text-align: center; font-size: 125%">Content 🗄️</label>
-                            <div class="field">
-                                <label class="label" style="margin-top: 2.5%; margin-bottom: 1%">Upload Image 🎞️:</label>
-                                <div class="control">
-                                    <div id="inline_container"></div>
-                                </div>
+    <div className="App">
+            <header className="App-header">
+                <Navbar />
+            </header>
+            <main>
+                <section className="section">
+                    <div className="columns is-variable is-8">
+                        <div className="column is-5 is-offset-1">
+                            <div className="card">
+                                <img id="sum-img" className="card-img-top" src={logo192} alt="Card image"></img>   
                             </div>
-                            <div class="field">
-                                <label class="label" style="border-bottom: 1px dashed black">Subject / Title 🗃️</label>
-                                <div class="control">
-                                   <div class="control" style="margin-top: 2.5%">
-                                        <input type="text" placeholder="www.ssh.com...Blog Git before you even start...📢" 
-                                    class="input subject-input" required/>
-                                </div>
+                        </div>
+                        <div className="column is-5">
+                            <div className="card">
+                                <img id="sum-img" className="card-img-top" src="{{format_summary 1.image}}" alt="Card image"></img>  
                             </div>
-                            <div class="field-body">
-                                <div class="field" style="margin-top: 3%">
-                                    <div class="control">
-                                        <label class="label">Content 📢:</label>
-                                        <textarea
-                                            class="textarea content-input"
-                                            required>
-                                        </textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-grouped is-grouped-right mt-3">
-                                <button id="dash-submit" class="button is-success submit-post">
-                                   Submit 📬
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="user-dash" class="hero has-background-grey-lighter hug">
-        <label class="label" style="border-bottom: 1px solid black; margin-bottom: 3%; text-align: center; font-size: 200%">User Dashboard 🎛️</label>
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-centered">
-                    <div class="column">
-    {{!--------------------------------------------- DASHBOARD TABLE -------------------------------------------}}
-                        <form id="dash-box" class="box">
-                            <table id="table-dash">
-                                <thead>
-                                    <tr id="dash-table">
-                                        <th class="table-id">ID 📇</th>
-                                        <th class="table-title">Title 📚</th>
-                                        <th class="table-created">Date/Time 🗓️</th>
-                                        <th class="table-edit">Edit ✍️</th>
-                                        <th class="table-delete">Delete ❌</th>
-                                    </tr>
-                                </thead>
-    
-                                <tbody>
-                                    {/* {{#each post}} */}
-                                        <tr id="table-row">
-											Table-Row
-                                            {/* <td>{{id}}</td>
-                                            <td>
-                                                <a href="/post/{{id}}">{{title}}</a>
-                                            </td>
-                                            <td>{{format_date createdAt}}</td>
-                                            <td id="editt">
-                                                <a id="edit" href="/useredit/{{this.id}}">✍️</a>
-                                            </td>
-                                            <td id="delete">
-                                                <a class="delete-post" id="delete-post" data-id="{{this.id}}">❌</a>
-                                            </td> */}
-                                        </tr>
-                                    {/* {{/each}} */}
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <script src="/js/add-post.js"></script>
-</main>
-)};
-
+                </section>
+            </main>
+            <footer className="App-footer">
+                <Footer />
+            </footer>
+    </div>
+        );
+    }
