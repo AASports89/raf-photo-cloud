@@ -1,7 +1,7 @@
 {
-  "name": "la-musica",
+  "name": "raf-photo-cloud",
   "version": "5.0.0",
-  "homepage": "https://aasports89.github.io/la-musica/",
+  "homepage": "https://aasports89.github.io/raf-photo-cloud/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.8",
