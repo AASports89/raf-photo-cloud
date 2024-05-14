@@ -1,7 +1,7 @@
 {
-  "name": "raf-photo-cloud",
+  "name": "la-musica",
   "version": "5.0.0",
-  "homepage": "https://gitname.github.io/raf-photo-cloud",
+  "homepage": "https://aasports89.github.io/la-musica/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.8",
@@ -18,7 +18,7 @@
     "apollo-server-express": "^3.6.2",
     "bcrypt": "^5.0.0",
     "bootstrap": "^5.1.3",
-    "cloudinary": "^2.1.0",
+    "cloudinary": "^2.0.3",
     "crypto-browserify": "^3.12.0",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.6",
@@ -29,17 +29,16 @@
     "jwt-decode": "^3.1.2",
     "mongoose": "^6.1.8",
     "querystring-es3": "^0.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
+    "typescript": "^4.5.4",
     "url": "^0.11.3",
-    "wowjs": "^1.1.3",
-    "@types/react-router-dom": "^5.3.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.17.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^5.3.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.3",
+    "wowjs": "^1.1.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -70,7 +69,8 @@
   "devDependencies": {
     "@types/aos": "^3.0.7",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "gh-pages": "^3.2.3",
-    "nodemon": "^2.0.3"
+    "gh-pages": "^6.1.1",
+    "nodemon": "^2.0.3",
+    "@babel/plugin-proposal-private-property-in-object":"7.21.11"
   }
 }

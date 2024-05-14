@@ -1,24 +1,9 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import logo from '../logo.svg';
 import Aos from 'aos';
 
-export default function Navbar() {
-
-  const navigate = useNavigate();
-     
-    const goToHome = () => {
- 
-        // This will navigate to second component
-        navigate('/');
-    };
-    const gotToUpload = () => {
- 
-        // This will navigate to first component
-        navigate('/upload');
-    };
-	
+const Navbar = () => {
     
     useEffect(() => {
 		Aos.init({duration:3000});
@@ -32,13 +17,21 @@ export default function Navbar() {
           </div>
           <div className="col-10">
             <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
-              <a id='home' data-aos="flip-right" className="nav-link active" onClick={goToHome}>
+              <a id='home' data-aos="flip-right" className="nav-link active" href={"/"}>
                 <i id='home-icon' className="fa-solid fa-house"></i> 
                 Home
-              </a>  
-           
-              <a id='custom' data-aos="flip-left" className="nav-link active" onClick={gotToUpload}>
-                <i id='custom-icon' className="fa-solid fa-layer-group"></i>
+              </a>
+                <a id='home' data-aos="flip-right" className="nav-link active" href={"/signin"}>
+                    <i id='home-icon' className="fa-duotone fa-users"></i>
+                    Log In
+                </a>
+
+                <a id='custom' data-aos="flip-left" className="nav-link active" href={"/signup"}>
+                    <i id='home-icon' className="fa-duotone fa-user-plus"></i>
+                    Sign Up
+                </a>
+              <a id='custom' data-aos="flip-left" className="nav-link active" href={"/upload"}>
+                  <i id='custom-icon' className="fa-duotone fa-cloud-arrow-up"></i>
                 Upload
               </a>
             </nav>
@@ -46,3 +39,4 @@ export default function Navbar() {
         </nav>
       </div>
     )};
+export default Navbar;

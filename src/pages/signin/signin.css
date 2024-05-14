@@ -1,0 +1,41 @@
+.formItem {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form-signin-heading {
+    margin-bottom: 100px;
+    font-size: 48px;
+}
+
+#signinHeader {
+    text-align: center;
+    box-shadow: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.error {
+    color: red;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#inputEmail {
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+#inputPassword {
+    margin-bottom: 2%;
+    width: 25%;
+}
+
+#signin-btn {
+    width: 15%;
+}
+
+#signup-btn {
+    margin-bottom: 2%;
+}
