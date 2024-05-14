@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/raf-photo-cloud/static/css/main.c43895bf.css",
-    "main.js": "/raf-photo-cloud/static/js/main.11e9abd9.js",
-    "static/js/453.3089349f.chunk.js": "/raf-photo-cloud/static/js/453.3089349f.chunk.js",
-    "static/media/logo.svg": "/raf-photo-cloud/static/media/logo.218bc01f79a3dd8e5a2ce6378e9111d4.svg",
-    "static/media/logo192.svg": "/raf-photo-cloud/static/media/logo192.f16a4cc61442d31dec071d90cdc83c7e.svg",
-    "index.html": "/raf-photo-cloud/index.html",
-    "main.c43895bf.css.map": "/raf-photo-cloud/static/css/main.c43895bf.css.map",
-    "main.11e9abd9.js.map": "/raf-photo-cloud/static/js/main.11e9abd9.js.map",
-    "453.3089349f.chunk.js.map": "/raf-photo-cloud/static/js/453.3089349f.chunk.js.map"
+    "main.css": "/la-musica/static/css/main.4b447745.css",
+    "main.js": "/la-musica/static/js/main.55bdae11.js",
+    "static/js/453.2708d935.chunk.js": "/la-musica/static/js/453.2708d935.chunk.js",
+    "static/media/logo.svg": "/la-musica/static/media/logo.218bc01f79a3dd8e5a2ce6378e9111d4.svg",
+    "index.html": "/la-musica/index.html",
+    "main.4b447745.css.map": "/la-musica/static/css/main.4b447745.css.map",
+    "main.55bdae11.js.map": "/la-musica/static/js/main.55bdae11.js.map",
+    "453.2708d935.chunk.js.map": "/la-musica/static/js/453.2708d935.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c43895bf.css",
-    "static/js/main.11e9abd9.js"
+    "static/css/main.4b447745.css",
+    "static/js/main.55bdae11.js"
   ]
 }
