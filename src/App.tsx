@@ -27,19 +27,19 @@ const App = () => {
         <Router>
             <Routes>
                 <Route
-                    path="https://aasports89.github.io/"
+                    path="https://aasports89.github.io/raf-photo-cloud/"
                     element={<Home />}
                 />
                 <Route
-                    path="https://aasports89.github.io/signin"
+                    path="https://aasports89.github.io/raf-photo-cloud/signin"
                     element={<SignIn />}
                 />
                 <Route
-                    path="https://aasports89.github.io/signup"
+                    path="https://aasports89.github.io/raf-photo-cloud/signup"
                     element={<SignUp />}
                 />
                 <Route
-                    path="https://aasports89.github.io/upload"
+                    path="https://aasports89.github.io/raf-photo-cloud/upload"
                     element={<SingleFileUploader />}
                 />
                 <Route

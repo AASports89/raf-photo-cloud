@@ -30,7 +30,7 @@ const SignUp = () => {
         // @ts-ignore
         fetch("https://63b250a70d51f5b297272159.mockapi.io/api/v1/users", requestOptions)
             .then(response => response.text())
-            .then(result => navigate("https://aasports89.github.io/signup"))
+            .then(result => navigate("https://aasports89.github.io/raf-photo-cloud/"))
             .catch(error => setError('Something Went Wrong'));
     }
 
