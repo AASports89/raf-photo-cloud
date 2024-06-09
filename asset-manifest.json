@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/raf-photo-cloud/static/css/main.4b447745.css",
-    "main.js": "/raf-photo-cloud/static/js/main.c0e013a3.js",
+    "main.js": "/raf-photo-cloud/static/js/main.39b22e69.js",
     "static/js/453.3089349f.chunk.js": "/raf-photo-cloud/static/js/453.3089349f.chunk.js",
     "static/media/logo.svg": "/raf-photo-cloud/static/media/logo.218bc01f79a3dd8e5a2ce6378e9111d4.svg",
     "index.html": "/raf-photo-cloud/index.html",
     "main.4b447745.css.map": "/raf-photo-cloud/static/css/main.4b447745.css.map",
-    "main.c0e013a3.js.map": "/raf-photo-cloud/static/js/main.c0e013a3.js.map",
+    "main.39b22e69.js.map": "/raf-photo-cloud/static/js/main.39b22e69.js.map",
     "453.3089349f.chunk.js.map": "/raf-photo-cloud/static/js/453.3089349f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b447745.css",
-    "static/js/main.c0e013a3.js"
+    "static/js/main.39b22e69.js"
   ]
 }
