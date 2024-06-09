@@ -27,19 +27,19 @@ const App = () => {
         <Router>
             <Routes>
                 <Route
-                    path="/"
+                    path="https://aasports89.github.io/"
                     element={<Home />}
                 />
                 <Route
-                    path="/signin"
+                    path="https://aasports89.github.io/signin"
                     element={<SignIn />}
                 />
                 <Route
-                    path="/signup"
+                    path="https://aasports89.github.io/signup"
                     element={<SignUp />}
                 />
                 <Route
-                    path="/upload"
+                    path="https://aasports89.github.io/upload"
                     element={<SingleFileUploader />}
                 />
                 <Route

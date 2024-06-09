@@ -17,20 +17,20 @@ const Navbar = () => {
           </div>
           <div className="col-10">
             <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
-              <a id='home' data-aos="flip-right" className="nav-link active" href={"/"}>
+              <a id='home' data-aos="flip-right" className="nav-link active" href={"https://aasports89.github.io/"}>
                 <i id='home-icon' className="fa-solid fa-house"></i> 
                 Home
               </a>
-                <a id='home' data-aos="flip-right" className="nav-link active" href={"/signin"}>
+                <a id='home' data-aos="flip-right" className="nav-link active" href={"https://aasports89.github.io/signin"}>
                     <i id='home-icon' className="fa-duotone fa-users"></i>
                     Log In
                 </a>
 
-                <a id='custom' data-aos="flip-left" className="nav-link active" href={"/signup"}>
+                <a id='custom' data-aos="flip-left" className="nav-link active" href={"https://aasports89.github.io/signup"}>
                     <i id='home-icon' className="fa-duotone fa-user-plus"></i>
                     Sign Up
                 </a>
-              <a id='custom' data-aos="flip-left" className="nav-link active" href={"/upload"}>
+              <a id='custom' data-aos="flip-left" className="nav-link active" href={"https://aasports89.github.io/upload"}>
                   <i id='custom-icon' className="fa-duotone fa-cloud-arrow-up"></i>
                 Upload
               </a>

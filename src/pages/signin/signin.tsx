@@ -24,7 +24,7 @@ const SignIn = () => {
         // @ts-ignore
         fetch(url, requestOptions)
             .then(response => response.text())
-            .then(result => navigate("/landing"))
+            .then(result => navigate("https://aasports89.github.io/signin"))
             .catch(error => setError('Something Went Wrong'));
     }
 
