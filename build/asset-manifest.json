@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/raf-photo-cloud/static/css/main.4b447745.css",
-    "main.js": "/raf-photo-cloud/static/js/main.8e12cf42.js",
+    "main.css": "/raf-photo-cloud/static/css/main.9ba809e1.css",
+    "main.js": "/raf-photo-cloud/static/js/main.27488b63.js",
     "static/js/453.3089349f.chunk.js": "/raf-photo-cloud/static/js/453.3089349f.chunk.js",
     "static/media/logo.svg": "/raf-photo-cloud/static/media/logo.218bc01f79a3dd8e5a2ce6378e9111d4.svg",
     "index.html": "/raf-photo-cloud/index.html",
-    "main.4b447745.css.map": "/raf-photo-cloud/static/css/main.4b447745.css.map",
-    "main.8e12cf42.js.map": "/raf-photo-cloud/static/js/main.8e12cf42.js.map",
+    "main.9ba809e1.css.map": "/raf-photo-cloud/static/css/main.9ba809e1.css.map",
+    "main.27488b63.js.map": "/raf-photo-cloud/static/js/main.27488b63.js.map",
     "453.3089349f.chunk.js.map": "/raf-photo-cloud/static/js/453.3089349f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b447745.css",
-    "static/js/main.8e12cf42.js"
+    "static/css/main.9ba809e1.css",
+    "static/js/main.27488b63.js"
   ]
 }

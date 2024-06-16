@@ -44,3 +44,7 @@
 #signup-btn {
     width: 15%;
 }
+
+#error {
+    color: rgb(190, 18, 18)
+}

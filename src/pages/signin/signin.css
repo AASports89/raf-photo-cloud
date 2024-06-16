@@ -39,3 +39,7 @@
 #signup-btn {
     margin-bottom: 2%;
 }
+
+#error {
+    color: rgb(190, 18, 18)
+}

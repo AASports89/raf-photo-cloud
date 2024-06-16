@@ -9,7 +9,7 @@ const SignUp = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
-    const [error, setError] = useState('Something went wrong')
+    const [error, setError] = useState('')
     const navigate = useNavigate();
 
     const handleSubmit = () => {
@@ -30,8 +30,8 @@ const SignUp = () => {
         // @ts-ignore
         fetch("https://63b250a70d51f5b297272159.mockapi.io/api/v1/users", requestOptions)
             .then(response => response.text())
-            .then(result => navigate("https://aasports89.github.io/raf-photo-cloud/"))
-            .catch(error => setError('Something Went Wrong'));
+            .then(result => navigate('/'))
+            .catch(error => setError('Error '));
     }
 
     // @ts-ignore
@@ -59,16 +59,16 @@ const SignUp = () => {
             <form className='modal-sm' onSubmit={handleSubmit}>
 
                 <div className='row justify-content-center'>
-                    <h2 id='signupHeader' className="card">Create Account </h2>
+                    <h2 id='signupHeader' className="card"><i className="fa-solid fa-user"></i> Create Account </h2>
                     <label htmlFor="inputEmail" className="sr-only"> Name</label>
                     <input type="text" id="inputName" value={name} onChange={handleNameChange} className="form-control" placeholder="Name" required autoFocus />
                 </div>
                 <div className='row justify-content-center'>
-                    <label htmlFor="inputEmail" className="sr-only"> Email address</label>
+                    <label htmlFor="inputEmail" className="sr-only"><i className="fa-solid fa-user"></i> Email address</label>
                     <input type="email" id="inputEmail" value={email} onChange={handleEmailChange} className="form-control" placeholder="Email address" required autoFocus />
                 </div>
                 <div className='row justify-content-center'>
-                    <label htmlFor="inputPassword" className="sr-only"> Password</label>
+                    <label htmlFor="inputPassword" className="sr-only"><i className="fa-solid fa-user"></i> Password</label>
                     <input type="password" id="inputPassword" value={password} onChange={handlePasswordChange} className="form-control" placeholder="Password" required />
                 </div>
                 <div className='row justify-content-center'>

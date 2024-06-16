@@ -17,21 +17,21 @@ const Navbar = () => {
           </div>
           <div className="col-10">
             <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
-              <a id='home' data-aos="flip-right" className="nav-link active" href={"https://aasports89.github.io/raf-photo-cloud/"}>
+              <a id='home' data-aos="flip-right" className="nav-link active" href={"/"}>
                 <i id='home-icon' className="fa-solid fa-house"></i> 
                 Home
               </a>
-                <a id='home' data-aos="flip-right" className="nav-link active" href={"https://aasports89.github.io/raf-photo-cloud/signin"}>
-                    <i id='home-icon' className="fa-duotone fa-users"></i>
+                <a id='home' data-aos="flip-right" className="nav-link active" href={"/signin"}>
+                    <i id='home-icon' className="fa-solid fa-user"></i>
                     Log In
                 </a>
 
-                <a id='custom' data-aos="flip-left" className="nav-link active" href={"https://aasports89.github.io/raf-photo-cloud/signup"}>
-                    <i id='home-icon' className="fa-duotone fa-user-plus"></i>
+                <a id='custom' data-aos="flip-left" className="nav-link active" href={"/signup"}>
+                    <i id='home-icon' className="fa-solid fa-user-plus"></i>
                     Sign Up
                 </a>
-              <a id='custom' data-aos="flip-left" className="nav-link active" href={"https://aasports89.github.io/raf-photo-cloud/upload"}>
-                  <i id='custom-icon' className="fa-duotone fa-cloud-arrow-up"></i>
+              <a id='custom' data-aos="flip-left" className="nav-link active" href={"/upload"}>
+                  <i id='custom-icon' className="fa-solid fa-cloud-arrow-up"></i>
                 Upload
               </a>
             </nav>

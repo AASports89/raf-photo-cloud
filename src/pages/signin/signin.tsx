@@ -24,8 +24,8 @@ const SignIn = () => {
         // @ts-ignore
         fetch(url, requestOptions)
             .then(response => response.text())
-            .then(result => navigate("https://aasports89.github.io/raf-photo-cloud/"))
-            .catch(error => setError('Something Went Wrong'));
+            .then(result => navigate('/'))
+            .catch(error => setError('Error '));
     }
 
     // @ts-ignore
@@ -44,13 +44,13 @@ const SignIn = () => {
             <Navbar />
             <form className='modal-sm' onSubmit={handleSubmit}>
                 <div className='row justify-content-center'>
-                    <h2 id='signinHeader' className="card">Log In </h2>
+                    <h2 id='signinHeader' className="card"><i id='home-icon' className="fa-solid fa-user"></i> Log In </h2>
                     <div className='row justify-content-center'>
-                        <label htmlFor="inputEmail" className="sr-only"> Email address</label>
+                        <label htmlFor="inputEmail" className="sr-only"><i className="fa-solid fa-user"></i> Email Address</label>
                         <input type="email" id="inputEmail" value={email} onChange={handleEmailChange} className="form-control" placeholder="Email address" required autoFocus />
                     </div>
                     <div className='row justify-content-center'>
-                        <label htmlFor="inputPassword" className="sr-only"> Password</label>
+                        <label htmlFor="inputPassword" className="sr-only"><i className="fa-solid fa-user"></i> Password</label>
                         <input type="password" id="inputPassword" value={password} onChange={handlePasswordChange} className="form-control" placeholder="Password" required />
                     </div>
                     <div className='row justify-content-center'>
