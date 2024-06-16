@@ -43,7 +43,7 @@ const App = () => {
                     element={<SingleFileUploader />}
                 />
                 <Route
-                    path="https://aasports89.github.io/raf-photo-cloud/"
+                    path="*"
                     element={<Navigate to="/" />}
                 />
             </Routes>
